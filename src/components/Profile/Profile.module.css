@@ -1,0 +1,17 @@
+.profile {
+  font-size: 16px;
+}
+
+.description {
+}
+
+.stats {
+  display: flex;
+}
+
+.stats li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
