@@ -1,17 +1,54 @@
 .profile {
+  margin: 20px;
+  width: 300px;
   font-size: 16px;
+  color: grey;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .description {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.avatar {
+  margin: 0 auto 40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+.tag {
+  margin-bottom: 10px;
 }
 
 .stats {
+  height: 80px;
   display: flex;
 }
 
 .stats li {
+  flex-basis: calc(100% / 3);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #eef1f5;
+  border: 1px solid #becada;
+}
+
+.label {
+  margin-bottom: 4px;
+}
+
+.quantity {
+  font-weight: 700;
+  color: black;
 }
