@@ -1,0 +1,38 @@
+.item {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding: 8px 12px;
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.status {
+  margin-right: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.status.red {
+  background-color: red;
+}
+
+.status.green {
+  background-color: green;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+}
+
+.name {
+  font-size: 24px;
+}
