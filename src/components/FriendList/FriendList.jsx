@@ -4,7 +4,7 @@ import FriendListItem from './FriendListItem/FriendListItem';
 
 import css from './FriendList.module.css';
 
-const FriendList = ({ friends = [] }) => {
+const FriendList = ({ friends }) => {
   return (
     <ul className={css.friendList}>
       {friends.map(({ avatar, name, isOnline, id }) => (
@@ -20,7 +20,14 @@ const FriendList = ({ friends = [] }) => {
 };
 
 FriendList.propTypes = {
-  friends: PropTypes.arrayOf(PropTypes.object),
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      id: PropTypes.number.isRequired,
+    })
+  ),
 };
 
 export default FriendList;

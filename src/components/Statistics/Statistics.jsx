@@ -4,7 +4,7 @@ import css from './Statistics.module.css';
 
 import { getRandomHexColor, calcWidthStatsItem } from 'utils';
 
-const Statistics = ({ title, stats = [] }) => {
+const Statistics = ({ title, stats }) => {
   const width = calcWidthStatsItem(stats);
   return (
     <section className={css.statistics}>
